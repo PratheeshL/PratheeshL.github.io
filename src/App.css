@@ -1,0 +1,122 @@
+.App {
+  text-align: center;
+  background-color: blanchedalmond;
+}
+
+
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.Age-label {
+  margin-top: 50px;
+    margin-bottom: 50px;
+    /* margin-right: 40%;
+    margin-left: 40%;
+    width: 20%; */
+    padding: 30px;
+    background-color: tomato;
+}
+
+button {
+  /* margin-left: 10px;
+   */
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom:10px;
+}
+.btn-full{
+  /* margin-bottom: 20px; */
+
+}
+#player1{
+  background-color:blue;
+}
+#player2{
+  background-color:brown;
+}
+#whole{
+  height: 100vh;
+    background-color: teal;
+}
+#btn-savescore{
+  margin-bottom: 20px;
+  background-color: crimson;
+}
+#btn-start{
+  background-color: crimson;
+}
+#player1-text{
+  color:blue;
+}
+#player2-text{
+  color:brown;
+}
+#btn-session-score{
+  color:green;
+}
+#winner{
+  width:200px;
+  height: 76px;
+}
+.btr-lk{
+    FONT-SIZE: 22PX;
+    font-family: sans-serif;
+}
+
+
+
+a { color: black; text-decoration: none; }
+
+.displayVisible{
+  visibility: visible;
+}
+.displayNone{
+  visibility: hidden;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.colorBrown{
+  color:brown;
+  font-size:20px;
+}
+.colorBlue{
+  color:blue;
+  font-size:20px;
+}
+
+
+
+
+
+@media screen and (min-width: 360px) and (max-width: 640px){
+  .new{margin-bottom: 30px;
+    margin-top: 30px;}
+  
+}
