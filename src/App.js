@@ -33,7 +33,7 @@ class App extends Component {
         <div className="Age-label">
          <img src={`images/dice${this.props.rolledDice}.png`}/>
         </div>
-       <Button  disabled={this.props.disableSave} id="btn-start" onClick={this.props.reset}>START A NEW GAME</Button>
+       <Button  disabled={this.props.disableNew} id="btn-start" onClick={this.props.reset}>START A NEW GAME</Button>
         <div>
         <Row className="new">
       <Col>

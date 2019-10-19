@@ -13,6 +13,7 @@ const initialState = {
     winner1:false,
     winner2:false,
     disableSave:true,
+	disableNew :true,
     classArrow1:'displayVisible colorBlue',
     classArrow2:'displayNone'
 };
@@ -25,6 +26,8 @@ const reducer = (state=initialState, action) => {
     switch(action.type){
         case 'rolled': 
         newState.disableSave=false;
+        newState.disableNew=false;
+		
         newState.rolledDice = Math.floor(Math.random() * Math.floor(6)+1);
 
         if(newState.rolledDice > 1){
@@ -70,13 +73,13 @@ const reducer = (state=initialState, action) => {
             
         }
 
-        if(newState.savedScore1 >= 30){
+        if(newState.savedScore1 >= 100){
             newState.player1Disable = true;
             newState.player2Disable = true;
             newState.winner1=true;
             newState.disableSave=true;
         }
-        else if(newState.savedScore2 >= 30){
+        else if(newState.savedScore2 >= 100){
             newState.player1Disable = true;
             newState.player2Disable = true;
             newState.disableSave=true;
