@@ -31,7 +31,7 @@ class App extends Component {
       
       <div className="App">
         <div className="Age-label">
-         <img src={`/images/dice${this.props.rolledDice}.png`}/>
+         <img src={`images/dice${this.props.rolledDice}.png`}/>
         </div>
        <Button  disabled={this.props.disableSave} id="btn-start" onClick={this.props.reset}>START A NEW GAME</Button>
         <div>
@@ -42,7 +42,7 @@ class App extends Component {
         <span id="player1-text" className="btr-lk"><b>BETTER LUCK <br/> NEXT TIME</b></span>
        :
         this.props.winner1 === true  ?
-        <img id="winner" src="/images/winner.png" />
+        <img id="winner" src="images/winner.png" />
       :
       <div>
       <div className="arrow bounce" >
@@ -58,7 +58,7 @@ class App extends Component {
         <span id="player2-text" className="btr-lk"><b>BETTER LUCK <br/> NEXT TIME</b></span>
        :
         this.props.winner2 === true ?
-        <img id="winner" src="/images/winner.png"/>
+        <img id="winner" src="images/winner.png"/>
        
        :
        <div>
